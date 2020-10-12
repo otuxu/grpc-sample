@@ -18,14 +18,14 @@ This repository is published for sharing my knowledge.
 You can test with gRPC-cli tool.  
 [grpcurl](https://github.com/fullstorydev/grpcurl), [evans](https://github.com/ktr0731/evans)  
   
-e.g.) (Testcase - Success call)
+e.g.) (Testcase - Success call)  
 `grpcurl -plaintext -d '{"id": 1}' localhost:50051 sample.Student.Get`
 
-(Testcase - Failure call)
+(Testcase - Failure call)  
 `grpcurl -plaintext -d '{"id": 2}' localhost:50051 sample.Student.Get`
 
-You can also check "grpc-zap" logging in docker log.
-`docker logs -f 
+You can also check "grpc-zap" logging in docker log.  
+`docker logs -f grpc-sample`  
 
 # Author  
 
