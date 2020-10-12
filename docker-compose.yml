@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  grpc_zap_log:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: grpc-sample
+    container_name: grpc-sample
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - "50051:50051"
+    command: go run main.go
+
